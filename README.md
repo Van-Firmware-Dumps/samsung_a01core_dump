@@ -1,0 +1,14 @@
+# a01corextc-user 10 QP1A.190711.020 A013GXXU5AWA2 release-keys
+- manufacturer: samsung
+- platform: mt6739
+- codename: a01core
+- flavor: a01corextc-user
+- release: 10
+- id: QP1A.190711.020
+- incremental: A013GXXU5AWA2
+- tags: release-keys
+- fingerprint: samsung/a01corextc/a01core:10/QP1A.190711.020/A013GXXU5AWA2:user/release-keys
+- is_ab: false
+- brand: samsung
+- branch: a01corextc-user-10-QP1A.190711.020-A013GXXU5AWA2-release-keys
+- repo: samsung_a01core_dump
