@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <PlatformWhitelist>
+    <App1>com.salab.act</App1>
+    <App2>com.sec.android.app.tinym</App2>
+    <App3>com.sec.aecmonitor</App3>
+    <App4>com.sec.jm.thehelper</App4>
+    <App5>com.salab.issuetracker</App5>
+    <App6>sdet.pack.channel</App6>
+    <App7>sdet.pack</App7>
+    <App8>com.sec.sherlock</App8>
+    <App9>com.sec.sherlockloaddata</App9>
+    <App10>com.whatsapp</App10>
+  </PlatformWhitelist>
+</configuration>

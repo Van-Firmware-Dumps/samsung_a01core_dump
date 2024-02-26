@@ -1,0 +1,30 @@
+# sysmon rc file, 
+# SA part, System team.
+
+service sysmon /system/bin/sysmon
+    class core
+    user system
+    group system readproc
+    oneshot
+
+on property:vold.decrypt=trigger_load_persist_props
+    start sysmon
+
+on post-fs-data
+    start sysmon
+
+on property:init.svc.sysmon=stopped && property:sys.ssrm.trigger_sysmon=1 && property:ro.debug_level=0x494d
+    rm /data/log/sysmon_ssrm.tgz
+    write /data/log/sysmon-logcat 1
+    write /data/log/sysmon-start 30,system_server
+    chown system system /data/log/sysmon-start 
+    chown system system /data/log/sysmon-logcat 
+    chmod 0644 /data/log/sysmon-start 
+    chmod 0644 /data/log/sysmon-logcat
+    start sysmon
+    setprop sys.ssrm.trigger_sysmon 2
+
+on property:init.svc.sysmon=stopped && property:sys.ssrm.trigger_sysmon=2 && property:ro.debug_level=0x494d
+    rm /data/log/sysmon-start
+    chmod 0644 /data/log/sysmon_ssrm.tgz
+    setprop sys.ssrm.trigger_sysmon 0

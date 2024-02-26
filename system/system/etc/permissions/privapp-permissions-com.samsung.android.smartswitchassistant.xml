@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <privapp-permissions package="com.samsung.android.smartswitchassistant">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.GRANT_RUNTIME_PERMISSIONS" />
+        <permission name="android.permission.REVOKE_RUNTIME_PERMISSIONS" />
+        <permission name="android.permission.GET_RUNTIME_PERMISSIONS" />        
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,28 @@
+# bootchecker rc file, 
+# SA part, System team.
+
+service bootchecker /system/bin/bootchecker
+    class late_start
+    user system
+    group system log
+    oneshot
+
+on property:init.svc.zygote=restarting
+    write /dev/freezer/olaf/freezer.state THAWED
+    restart bootchecker
+
+# FDE
+on property:ro.crypto.type=block && property:dev.bootcomplete=1 && property:sys.boot.end_package=0
+    softdog 1000
+
+# FBE
+on property:ro.crypto.type=file && property:dev.bootcomplete=1 && property:sys.boot.end_package=0
+    softdog 100
+
+on property:init.svc.zygote=stopping
+    write /dev/freezer/olaf/freezer.state THAWED
+
+on property:sys.readahead.inputmethod=1
+    readahead /system/app/SamsungIMEv3.0_LITE/oat/arm64/SamsungIMEv3.0_LITE.odex --fully
+    readahead /system/app/SamsungIMEv3.0_LITE/SamsungIMEv3.0_LITE.apk --fully
+    setprop sys.readahead.inputmethod 0

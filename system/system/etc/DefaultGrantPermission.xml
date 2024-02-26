@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<DefaultGrantPermissions>
+    <version databaseVersion="1" />
+    <package name="com.test.package.name">
+        <permission name="android.permission.name.first" systemfixed="false" />
+        <permission name="android.permission.name.two" systemfixed="false" />
+    </package>
+	
+    <sales-code csc="COM">
+    <!-- LATIN Apps -->
+        <package name="com.claroColombia.contenedor">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <sales-code csc="TCE">
+    <!-- LATIN Apps -->
+        <package name="com.telcel.contenedor">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.speedymovil.wire">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+        </package>
+    </sales-code>
+	
+</DefaultGrantPermissions>
+
