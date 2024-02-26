@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is used for configuring gms apps required for a model on the basis of RAM.
+     Apps configured will be skipped for installation. Ram size should be in increasing order.
+-->
+<config>
+    <ram-size value="1">
+        <common>Gmail2,Maps,Drive,Videos</common>
+    </ram-size>
+
+    <ram-size value="2">
+        <common>GMailGo,MapsGo,YouTubeGo</common>
+    </ram-size>
+</config>

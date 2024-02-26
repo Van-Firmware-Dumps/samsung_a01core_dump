@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<preferred-activities>
+    <item name="com.google.android.apps.photosgo/.home.HomeActivity">
+        <filter>
+            <action name="android.intent.action.MAIN" />
+            <cat name="android.intent.category.APP_GALLERY" />
+            <cat name="android.intent.category.DEFAULT" />
+        </filter>
+    </item>
+    <item name="com.google.android.apps.searchlite/com.google.android.apps.searchlite.ui.SearchActivity">
+      <filter>
+            <action name="android.intent.action.WEB_SEARCH" />
+            <cat name="android.intent.category.DEFAULT" />
+      </filter>
+    </item>
+    <item name="com.google.android.apps.photosgo/.oneup.ExternalOneUpActivity">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "image/*" "image/" "image" invalid -->
+            <type name="image/ico" />
+            <type name="image/ief" />
+            <type name="image/pcx" />
+            <type name="image/svg+xml" />
+            <type name="image/tiff" />
+            <type name="image/vnd.djvu" />
+            <type name="image/x-cmu-raster" />
+            <type name="image/x-coreldraw" />
+            <type name="image/x-coreldrawpattern" />
+            <type name="image/x-coreldrawtemplate" />
+            <type name="image/x-corelphotopaint" />
+            <type name="image/x-icon" />
+            <type name="image/x-jg" />
+            <type name="image/x-jng" />
+            <type name="image/x-photoshop" />
+            <type name="image/x-portable-anymap" />
+            <type name="image/x-portable-bitmap" />
+            <type name="image/x-portable-graymap" />
+            <type name="image/x-portable-pixmap" />
+            <type name="image/x-rgb" />
+            <type name="image/x-xbitmap" />
+            <type name="image/x-xpixmap" />
+            <type name="image/x-xwindowdump" />
+            <!-- get from Photos AndroidManifest.xml -->
+            <type name="video/mpeg4" />
+            <type name="video/quicktime" />
+        </filter>
+    </item>
+    <item name="com.google.android.apps.youtube.music/.audiopreview.AudioPreviewPlayerActivity">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <scheme name="file" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "audio/*" invalid -->
+            <type name="audio/3gpp" />
+            <type name="audio/aac" />
+            <type name="audio/aac-adts" />
+            <type name="audio/amr" />
+            <type name="audio/amr-wb" />
+            <type name="audio/basic" />
+            <type name="audio/flac" />
+            <type name="audio/imelody" />
+            <type name="audio/midi" />
+            <type name="audio/mobile-xmf" />
+            <type name="audio/mpeg" />
+            <type name="audio/mpegurl" />
+            <type name="audio/ogg" />
+            <type name="audio/mp3" />
+            <type name="audio/prs.sid" />
+            <type name="audio/qcelp" />
+            <type name="audio/x-aiff" />
+            <type name="audio/x-gsm" />
+            <type name="audio/x-matroska" />
+            <type name="audio/x-mpegurl" />
+            <type name="audio/x-ms-wma" />
+            <type name="audio/x-ms-wax" />
+            <type name="audio/x-pn-realaudio" />
+            <type name="audio/x-realaudio" />
+            <type name="audio/x-scpls" />
+            <type name="audio/x-sd2" />
+            <type name="audio/x-wav" />
+            <!-- get from YouTubeMusicPrebuilt AndroidManifest.xml -->
+            <type name="application/ogg" />
+            <type name="application/x-ogg" />
+            <type name="application/itunes" />
+        </filter>
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <scheme name="http" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "audio/*" invalid -->
+            <type name="audio/3gpp" />
+            <type name="audio/aac" />
+            <type name="audio/aac-adts" />
+            <type name="audio/amr" />
+            <type name="audio/amr-wb" />
+            <type name="audio/basic" />
+            <type name="audio/flac" />
+            <type name="audio/imelody" />
+            <type name="audio/midi" />
+            <type name="audio/mobile-xmf" />
+            <type name="audio/mpeg" />
+            <type name="audio/mpegurl" />
+            <type name="audio/ogg" />
+            <type name="audio/mp3" />
+            <type name="audio/prs.sid" />
+            <type name="audio/qcelp" />
+            <type name="audio/x-aiff" />
+            <type name="audio/x-gsm" />
+            <type name="audio/x-matroska" />
+            <type name="audio/x-mpegurl" />
+            <type name="audio/x-ms-wma" />
+            <type name="audio/x-ms-wax" />
+            <type name="audio/x-pn-realaudio" />
+            <type name="audio/x-realaudio" />
+            <type name="audio/x-scpls" />
+            <type name="audio/x-sd2" />
+            <type name="audio/x-wav" />
+            <!-- get from YouTubeMusicPrebuilt AndroidManifest.xml -->
+            <type name="application/ogg" />
+            <type name="application/x-ogg" />
+            <type name="application/itunes" />
+        </filter>
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <scheme name="https" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "audio/*" invalid -->
+            <type name="audio/3gpp" />
+            <type name="audio/aac" />
+            <type name="audio/aac-adts" />
+            <type name="audio/amr" />
+            <type name="audio/amr-wb" />
+            <type name="audio/basic" />
+            <type name="audio/flac" />
+            <type name="audio/imelody" />
+            <type name="audio/midi" />
+            <type name="audio/mobile-xmf" />
+            <type name="audio/mpeg" />
+            <type name="audio/mpegurl" />
+            <type name="audio/ogg" />
+            <type name="audio/mp3" />
+            <type name="audio/prs.sid" />
+            <type name="audio/qcelp" />
+            <type name="audio/x-aiff" />
+            <type name="audio/x-gsm" />
+            <type name="audio/x-matroska" />
+            <type name="audio/x-mpegurl" />
+            <type name="audio/x-ms-wma" />
+            <type name="audio/x-ms-wax" />
+            <type name="audio/x-pn-realaudio" />
+            <type name="audio/x-realaudio" />
+            <type name="audio/x-scpls" />
+            <type name="audio/x-sd2" />
+            <type name="audio/x-wav" />
+            <!-- get from YouTubeMusicPrebuilt AndroidManifest.xml -->
+            <type name="application/ogg" />
+            <type name="application/x-ogg" />
+            <type name="application/itunes" />
+        </filter>
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <scheme name="content" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "audio/*" invalid -->
+            <type name="audio/3gpp" />
+            <type name="audio/aac" />
+            <type name="audio/aac-adts" />
+            <type name="audio/amr" />
+            <type name="audio/amr-wb" />
+            <type name="audio/basic" />
+            <type name="audio/flac" />
+            <type name="audio/imelody" />
+            <type name="audio/midi" />
+            <type name="audio/mobile-xmf" />
+            <type name="audio/mpeg" />
+            <type name="audio/mpegurl" />
+            <type name="audio/ogg" />
+            <type name="audio/mp3" />
+            <type name="audio/prs.sid" />
+            <type name="audio/qcelp" />
+            <type name="audio/x-aiff" />
+            <type name="audio/x-gsm" />
+            <type name="audio/x-matroska" />
+            <type name="audio/x-mpegurl" />
+            <type name="audio/x-ms-wma" />
+            <type name="audio/x-ms-wax" />
+            <type name="audio/x-pn-realaudio" />
+            <type name="audio/x-realaudio" />
+            <type name="audio/x-scpls" />
+            <type name="audio/x-sd2" />
+            <type name="audio/x-wav" />
+            <!-- get from YouTubeMusicPrebuilt AndroidManifest.xml -->
+            <type name="application/ogg" />
+            <type name="application/x-ogg" />
+            <type name="application/itunes" />
+        </filter>
+    </item>
+</preferred-activities>
